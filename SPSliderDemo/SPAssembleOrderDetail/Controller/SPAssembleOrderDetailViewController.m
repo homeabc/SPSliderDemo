@@ -76,6 +76,7 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
     if (!cell) {
         cell = [[SPAssembleOrderDetailTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:SPAssembleOrderDetailCellIdentifier];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
