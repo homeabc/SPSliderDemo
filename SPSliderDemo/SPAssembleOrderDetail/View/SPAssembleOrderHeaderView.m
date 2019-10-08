@@ -10,6 +10,8 @@
 
 @interface SPAssembleOrderHeaderView ()
 
+@property (strong,nonatomic) UIImageView *iconImageView;
+
 
 @end
 
@@ -18,6 +20,9 @@
 -(instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
+        
+        
+        
         
         
     }
