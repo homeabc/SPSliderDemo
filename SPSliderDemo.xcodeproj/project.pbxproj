@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5499EB70AC992F1EABA2C94B /* Pods_SPSliderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286AE659EEA2211D42E00FEA /* Pods_SPSliderDemo.framework */; };
 		F129B036234C526000C4BDFF /* SPAssembleOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F129B035234C526000C4BDFF /* SPAssembleOrderDetailViewController.m */; };
+		F129B039234C554F00C4BDFF /* SPAssembleOrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F129B038234C554F00C4BDFF /* SPAssembleOrderHeaderView.m */; };
 		F13D42EB233DF55B003E19DF /* SPAssembleSonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13D42EA233DF55B003E19DF /* SPAssembleSonViewController.m */; };
 		F13D42EE233DFB34003E19DF /* SPAssembleSonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13D42ED233DFB34003E19DF /* SPAssembleSonTableViewCell.m */; };
 		F154138F233CAA5600DF119C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F154138E233CAA5600DF119C /* AppDelegate.m */; };
@@ -45,6 +46,8 @@
 		BAF6FA148F8E89BDADBE04B0 /* Pods-SPSliderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPSliderDemo.release.xcconfig"; path = "Target Support Files/Pods-SPSliderDemo/Pods-SPSliderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F129B034234C526000C4BDFF /* SPAssembleOrderDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleOrderDetailViewController.h; sourceTree = "<group>"; };
 		F129B035234C526000C4BDFF /* SPAssembleOrderDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAssembleOrderDetailViewController.m; sourceTree = "<group>"; };
+		F129B037234C554F00C4BDFF /* SPAssembleOrderHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleOrderHeaderView.h; sourceTree = "<group>"; };
+		F129B038234C554F00C4BDFF /* SPAssembleOrderHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAssembleOrderHeaderView.m; sourceTree = "<group>"; };
 		F13D42E9233DF55B003E19DF /* SPAssembleSonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleSonViewController.h; sourceTree = "<group>"; };
 		F13D42EA233DF55B003E19DF /* SPAssembleSonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAssembleSonViewController.m; sourceTree = "<group>"; };
 		F13D42EC233DFB34003E19DF /* SPAssembleSonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleSonTableViewCell.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 		F129B033234C520200C4BDFF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F129B037234C554F00C4BDFF /* SPAssembleOrderHeaderView.h */,
+				F129B038234C554F00C4BDFF /* SPAssembleOrderHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				F13D42EE233DFB34003E19DF /* SPAssembleSonTableViewCell.m in Sources */,
 				F15413D5233CAB9500DF119C /* MASConstraint.m in Sources */,
 				F15413D3233CAB9500DF119C /* NSArray+MASAdditions.m in Sources */,
+				F129B039234C554F00C4BDFF /* SPAssembleOrderHeaderView.m in Sources */,
 				F1A721B4234090F300EE2465 /* SPAssembleOrderSonViewController.m in Sources */,
 				F15413AC233CAA9E00DF119C /* SPAssembleHomeViewController.m in Sources */,
 				F15413AB233CAA9E00DF119C /* SPSliderViewController.m in Sources */,
