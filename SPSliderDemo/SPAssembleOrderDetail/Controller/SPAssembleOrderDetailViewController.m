@@ -7,6 +7,8 @@
 //
 
 #import "SPAssembleOrderDetailViewController.h"
+#import "SPAssembleOrderDetailTableViewCell.h"
+#import "Masonry.h"
 
 static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrderDetailCellIdentifier";
 
@@ -22,8 +24,23 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"拼单详细";
     
- 
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self addController];
+    
+    
+}
+
+- (void)addController
+{
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.mas_equalTo(0);
+        make.top.mas_equalTo(self.view.mas_top).offset(100);
+    }];
+    
 }
 
 
@@ -36,11 +53,12 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.backgroundColor = [UIColor colorWithRed:235/255.0 green:234/255.0 blue:241/255.0 alpha:1];
-        _tableView.estimatedRowHeight = 100;
+        _tableView.backgroundColor = [UIColor whiteColor];
+        _tableView.estimatedRowHeight = 188.0f;
         _tableView.estimatedSectionFooterHeight = 0.0f;
         _tableView.estimatedSectionHeaderHeight = 0.0f;
-        
+        [_tableView registerNib:[UINib nibWithNibName:@"SPAssembleOrderDetailTableViewCell" bundle:nil] forCellReuseIdentifier:SPAssembleOrderDetailCellIdentifier];
+
     }
     return _tableView;
 }
@@ -54,12 +72,16 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SPAssembleOrderDetailCellIdentifier];
+    SPAssembleOrderDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SPAssembleOrderDetailCellIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:SPAssembleOrderDetailCellIdentifier];
+        cell = [[SPAssembleOrderDetailTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:SPAssembleOrderDetailCellIdentifier];
     }
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 174.0f;
+}
 
 @end

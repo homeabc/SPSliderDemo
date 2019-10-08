@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SPAssembleOrderViewController.h"
+#import "SPAssembleOrderDetailViewController.h"
 
 @interface ViewController ()
 
@@ -27,7 +28,7 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    SPAssembleOrderViewController *vc = [[SPAssembleOrderViewController alloc] init];
+    SPAssembleOrderDetailViewController *vc = [[SPAssembleOrderDetailViewController alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
     
 }

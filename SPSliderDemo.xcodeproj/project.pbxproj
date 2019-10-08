@@ -38,6 +38,8 @@
 		F1A721B4234090F300EE2465 /* SPAssembleOrderSonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A721B3234090F300EE2465 /* SPAssembleOrderSonViewController.m */; };
 		F1A721B8234092D100EE2465 /* SPAssembleOrderSonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A721B6234092D100EE2465 /* SPAssembleOrderSonTableViewCell.m */; };
 		F1A721B9234092D100EE2465 /* SPAssembleOrderSonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A721B7234092D100EE2465 /* SPAssembleOrderSonTableViewCell.xib */; };
+		F1B5B9A2234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B5B9A0234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.m */; };
+		F1B5B9A3234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B5B9A1234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +108,9 @@
 		F1A721B5234092D100EE2465 /* SPAssembleOrderSonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleOrderSonTableViewCell.h; sourceTree = "<group>"; };
 		F1A721B6234092D100EE2465 /* SPAssembleOrderSonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAssembleOrderSonTableViewCell.m; sourceTree = "<group>"; };
 		F1A721B7234092D100EE2465 /* SPAssembleOrderSonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPAssembleOrderSonTableViewCell.xib; sourceTree = "<group>"; };
+		F1B5B99F234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleOrderDetailTableViewCell.h; sourceTree = "<group>"; };
+		F1B5B9A0234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAssembleOrderDetailTableViewCell.m; sourceTree = "<group>"; };
+		F1B5B9A1234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPAssembleOrderDetailTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +173,9 @@
 			children = (
 				F129B037234C554F00C4BDFF /* SPAssembleOrderHeaderView.h */,
 				F129B038234C554F00C4BDFF /* SPAssembleOrderHeaderView.m */,
+				F1B5B99F234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.h */,
+				F1B5B9A0234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.m */,
+				F1B5B9A1234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -371,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F154139A233CAA5800DF119C /* LaunchScreen.storyboard in Resources */,
+				F1B5B9A3234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.xib in Resources */,
 				F1541397233CAA5800DF119C /* Assets.xcassets in Resources */,
 				F1A721B9234092D100EE2465 /* SPAssembleOrderSonTableViewCell.xib in Resources */,
 				F1541395233CAA5600DF119C /* Main.storyboard in Resources */,
@@ -448,6 +457,7 @@
 				F15413D4233CAB9500DF119C /* View+MASAdditions.m in Sources */,
 				F15413D0233CAB9500DF119C /* MASCompositeConstraint.m in Sources */,
 				F15413AA233CAA9E00DF119C /* SPSlideSegmentBarItem.m in Sources */,
+				F1B5B9A2234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.m in Sources */,
 				F15413B4233CAAFF00DF119C /* NSString+SPGetSize.m in Sources */,
 				F154139D233CAA5800DF119C /* main.m in Sources */,
 				F15413B5233CAAFF00DF119C /* UIColor+SPAddition.m in Sources */,
