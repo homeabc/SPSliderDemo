@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5499EB70AC992F1EABA2C94B /* Pods_SPSliderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286AE659EEA2211D42E00FEA /* Pods_SPSliderDemo.framework */; };
+		F129B036234C526000C4BDFF /* SPAssembleOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F129B035234C526000C4BDFF /* SPAssembleOrderDetailViewController.m */; };
 		F13D42EB233DF55B003E19DF /* SPAssembleSonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13D42EA233DF55B003E19DF /* SPAssembleSonViewController.m */; };
 		F13D42EE233DFB34003E19DF /* SPAssembleSonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13D42ED233DFB34003E19DF /* SPAssembleSonTableViewCell.m */; };
 		F154138F233CAA5600DF119C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F154138E233CAA5600DF119C /* AppDelegate.m */; };
@@ -42,6 +43,8 @@
 		286AE659EEA2211D42E00FEA /* Pods_SPSliderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPSliderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B466501691E77941D8367EE /* Pods-SPSliderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPSliderDemo.debug.xcconfig"; path = "Target Support Files/Pods-SPSliderDemo/Pods-SPSliderDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BAF6FA148F8E89BDADBE04B0 /* Pods-SPSliderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPSliderDemo.release.xcconfig"; path = "Target Support Files/Pods-SPSliderDemo/Pods-SPSliderDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F129B034234C526000C4BDFF /* SPAssembleOrderDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleOrderDetailViewController.h; sourceTree = "<group>"; };
+		F129B035234C526000C4BDFF /* SPAssembleOrderDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAssembleOrderDetailViewController.m; sourceTree = "<group>"; };
 		F13D42E9233DF55B003E19DF /* SPAssembleSonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleSonViewController.h; sourceTree = "<group>"; };
 		F13D42EA233DF55B003E19DF /* SPAssembleSonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAssembleSonViewController.m; sourceTree = "<group>"; };
 		F13D42EC233DFB34003E19DF /* SPAssembleSonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleSonTableViewCell.h; sourceTree = "<group>"; };
@@ -120,7 +123,6 @@
 				5B466501691E77941D8367EE /* Pods-SPSliderDemo.debug.xcconfig */,
 				BAF6FA148F8E89BDADBE04B0 /* Pods-SPSliderDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +132,39 @@
 				286AE659EEA2211D42E00FEA /* Pods_SPSliderDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F129B030234C520200C4BDFF /* SPAssembleOrderDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F129B031234C520200C4BDFF /* Controller */,
+				F129B032234C520200C4BDFF /* Model */,
+				F129B033234C520200C4BDFF /* View */,
+			);
+			path = SPAssembleOrderDetail;
+			sourceTree = "<group>";
+		};
+		F129B031234C520200C4BDFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F129B034234C526000C4BDFF /* SPAssembleOrderDetailViewController.h */,
+				F129B035234C526000C4BDFF /* SPAssembleOrderDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F129B032234C520200C4BDFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F129B033234C520200C4BDFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F1541381233CAA5600DF119C = {
@@ -157,6 +192,7 @@
 				F154138E233CAA5600DF119C /* AppDelegate.m */,
 				F1541390233CAA5600DF119C /* ViewController.h */,
 				F1541391233CAA5600DF119C /* ViewController.m */,
+				F129B030234C520200C4BDFF /* SPAssembleOrderDetail */,
 				F1A721A82340906B00EE2465 /* SPAssembleOrder */,
 				F15413B7233CAB9500DF119C /* Masonry */,
 				F15413AD233CAAFF00DF119C /* category */,
@@ -402,6 +438,7 @@
 				F1A721B8234092D100EE2465 /* SPAssembleOrderSonTableViewCell.m in Sources */,
 				F15413D2233CAB9500DF119C /* MASLayoutConstraint.m in Sources */,
 				F1A721AE2340908600EE2465 /* SPAssembleOrderViewController.m in Sources */,
+				F129B036234C526000C4BDFF /* SPAssembleOrderDetailViewController.m in Sources */,
 				F15413D4233CAB9500DF119C /* View+MASAdditions.m in Sources */,
 				F15413D0233CAB9500DF119C /* MASCompositeConstraint.m in Sources */,
 				F15413AA233CAA9E00DF119C /* SPSlideSegmentBarItem.m in Sources */,
