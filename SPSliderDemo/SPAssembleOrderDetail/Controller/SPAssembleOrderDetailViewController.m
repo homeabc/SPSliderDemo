@@ -31,10 +31,6 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
     [self addController];
     
     
-
-    
-    
-    
 }
 
 - (void)addController
