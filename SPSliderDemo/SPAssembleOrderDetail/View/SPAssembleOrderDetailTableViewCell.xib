@@ -60,18 +60,66 @@
                                 <color key="textColor" red="0.94117647058823528" green="0.78431372549019607" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="69.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkN-xW-gpC">
+                                <rect key="frame" x="117" y="125" width="40.5" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Gb5-fo-S7g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.29803921568627451" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="￥79.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf4-6V-O7z">
+                                <rect key="frame" x="165" y="127" width="31" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="eQa-N5-k8C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdf-SJ-flC">
+                                <rect key="frame" x="309" y="112.5" width="50" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.29803921568627451" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Kb7-Yc-pbq"/>
+                                    <constraint firstAttribute="width" constant="50" id="OYm-nQ-6HG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="去开团">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more" translatesAutoresizingMaskIntoConstraints="NO" id="oQQ-JK-jB6">
+                                <rect key="frame" x="348" y="15" width="11" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11" id="5tc-uv-yZ0"/>
+                                    <constraint firstAttribute="width" constant="11" id="MHj-z9-QhY"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Vf4-6V-O7z" secondAttribute="bottom" constant="15" id="40V-Sq-csD"/>
                             <constraint firstAttribute="trailing" secondItem="20I-WW-k2h" secondAttribute="trailing" id="4AH-1t-LDj"/>
+                            <constraint firstAttribute="trailing" secondItem="oQQ-JK-jB6" secondAttribute="trailing" constant="10" id="CIG-4X-elM"/>
+                            <constraint firstItem="oQQ-JK-jB6" firstAttribute="top" secondItem="D4t-0C-QMU" secondAttribute="top" constant="15" id="EAG-aI-Jrg"/>
                             <constraint firstItem="20I-WW-k2h" firstAttribute="top" secondItem="D4t-0C-QMU" secondAttribute="top" constant="44" id="EhS-A8-3e3"/>
                             <constraint firstItem="wcV-q9-83f" firstAttribute="leading" secondItem="D4t-0C-QMU" secondAttribute="leading" constant="10" id="Kai-2n-2HD"/>
                             <constraint firstItem="LGj-3f-Can" firstAttribute="leading" secondItem="iCK-U6-0OY" secondAttribute="trailing" constant="10" id="KvL-1u-uhR"/>
                             <constraint firstItem="iCK-U6-0OY" firstAttribute="top" secondItem="20I-WW-k2h" secondAttribute="bottom" constant="10" id="RZL-Y1-9WY"/>
+                            <constraint firstItem="lkN-xW-gpC" firstAttribute="leading" secondItem="iCK-U6-0OY" secondAttribute="trailing" constant="10" id="ZfG-HB-rOv"/>
+                            <constraint firstAttribute="trailing" secondItem="Mdf-SJ-flC" secondAttribute="trailing" constant="10" id="ZqW-Hn-owX"/>
+                            <constraint firstAttribute="bottom" secondItem="Mdf-SJ-flC" secondAttribute="bottom" constant="10" id="aPM-AY-Vi1"/>
                             <constraint firstAttribute="trailing" secondItem="EHC-8e-RII" secondAttribute="trailing" constant="30" id="bJk-TT-wvQ"/>
                             <constraint firstItem="EHC-8e-RII" firstAttribute="top" secondItem="20I-WW-k2h" secondAttribute="bottom" constant="12" id="bWr-hV-vle"/>
                             <constraint firstItem="wcV-q9-83f" firstAttribute="top" secondItem="D4t-0C-QMU" secondAttribute="top" constant="15" id="cUS-gT-nWj"/>
                             <constraint firstItem="EHC-8e-RII" firstAttribute="leading" secondItem="iCK-U6-0OY" secondAttribute="trailing" constant="12" id="cqB-qv-kpv"/>
+                            <constraint firstItem="Vf4-6V-O7z" firstAttribute="leading" secondItem="lkN-xW-gpC" secondAttribute="trailing" constant="8" id="iMJ-Kb-Uni"/>
+                            <constraint firstAttribute="bottom" secondItem="lkN-xW-gpC" secondAttribute="bottom" constant="15" id="knH-3v-UMg"/>
                             <constraint firstItem="iCK-U6-0OY" firstAttribute="leading" secondItem="D4t-0C-QMU" secondAttribute="leading" constant="10" id="n2b-ai-DV0"/>
                             <constraint firstItem="20I-WW-k2h" firstAttribute="leading" secondItem="D4t-0C-QMU" secondAttribute="leading" id="tfp-fb-dKp"/>
                             <constraint firstItem="LGj-3f-Can" firstAttribute="top" secondItem="EHC-8e-RII" secondAttribute="bottom" constant="19" id="zjX-OI-FLq"/>
@@ -88,7 +136,13 @@
                     <constraint firstAttribute="trailing" secondItem="D4t-0C-QMU" secondAttribute="trailing" constant="12" id="f9d-Fs-zuf"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="172" y="97.601199400299862"/>
+            <connections>
+                <outlet property="buyButton" destination="Mdf-SJ-flC" id="klM-Pc-3Hj"/>
+            </connections>
+            <point key="canvasLocation" x="48.799999999999997" y="31.934032983508249"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="more" width="11" height="11"/>
+    </resources>
 </document>

@@ -17,19 +17,30 @@
 
 @implementation SPAssembleOrderHeaderView
 
--(instancetype)initWithFrame:(CGRect)frame
++(instancetype)initXibWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame]) {
-        
-        
-        
-        
+    SPAssembleOrderHeaderView *view = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil].lastObject;
+    view.frame = frame;
+    [view awakeFromNib];
+    return view;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
         
     }
     return self;
 }
 
 
-
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    NSLog(@"awakeFromNib");
+    
+    
+    
+}
 
 @end

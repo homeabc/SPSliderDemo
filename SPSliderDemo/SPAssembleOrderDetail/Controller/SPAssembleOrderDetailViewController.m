@@ -8,6 +8,8 @@
 
 #import "SPAssembleOrderDetailViewController.h"
 #import "SPAssembleOrderDetailTableViewCell.h"
+#import "SPAssembleOrderHeaderView.h"
+
 #import "Masonry.h"
 
 static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrderDetailCellIdentifier";
@@ -16,6 +18,9 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
 @interface SPAssembleOrderDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
+
+@property (strong, nonatomic) SPAssembleOrderHeaderView *headerView;
+
 
 @end
 
@@ -26,8 +31,8 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
     
     self.title = @"拼单详细";
     
-    self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
+
     [self addController];
     
     
@@ -35,11 +40,21 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
 
 - (void)addController
 {
+    
+    self.headerView = [SPAssembleOrderHeaderView initXibWithFrame:CGRectMake(12, 64, self.view.frame.size.width-24, 121)];
     [self.view addSubview:self.tableView];
+                       
+                       
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.mas_equalTo(0);
-        make.top.mas_equalTo(self.view.mas_top).offset(100);
+        make.top.mas_equalTo(self.view.mas_top).offset(200);
     }];
+    
+}
+
+
+- (void)addMiddleView
+{
     
 }
 
@@ -76,6 +91,8 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
     if (!cell) {
         cell = [[SPAssembleOrderDetailTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:SPAssembleOrderDetailCellIdentifier];
     }
+    cell.buyButton.tag = indexPath.row;
+    [cell.buyButton addTarget:self action:@selector(buyButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -85,13 +102,11 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
     return 174.0f;
 }
 
+- (void)buyButtonClick:(UIButton *)btn
+{
+    NSLog(@"%ld",(long)btn.tag);
+}
 
-
-
-
-
-
-//测试信息
 
 
 @end

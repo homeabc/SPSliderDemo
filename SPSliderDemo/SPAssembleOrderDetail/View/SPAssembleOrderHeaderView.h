@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SPAssembleOrderHeaderView : UIView
 
+
++(instancetype)initXibWithFrame:(CGRect)frame;
+
 @end
 
 NS_ASSUME_NONNULL_END

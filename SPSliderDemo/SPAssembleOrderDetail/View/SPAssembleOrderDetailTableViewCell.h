@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SPAssembleOrderDetailTableViewCell : UITableViewCell
 
+
+
+@property (weak, nonatomic) IBOutlet UIButton *buyButton;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
