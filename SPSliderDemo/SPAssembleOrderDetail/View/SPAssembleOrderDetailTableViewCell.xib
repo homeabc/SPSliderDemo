@@ -88,7 +88,7 @@
                     <constraint firstAttribute="trailing" secondItem="D4t-0C-QMU" secondAttribute="trailing" constant="12" id="f9d-Fs-zuf"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="172" y="97.601199400299862"/>
+            <point key="canvasLocation" x="95" y="26"/>
         </tableViewCell>
     </objects>
 </document>

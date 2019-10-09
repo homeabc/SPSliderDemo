@@ -12,6 +12,12 @@
 
 @property (strong,nonatomic) UIImageView *iconImageView;
 
+@property (strong, nonatomic) UILabel *showLabel;
+
+@property (strong, nonatomic) UILabel *priceLabel;
+
+@property (strong, nonatomic) UILabel *originLabel;
+
 
 @end
 
