@@ -41,13 +41,15 @@ static NSString * const SPAssembleOrderDetailCellIdentifier    = @"SPAssembleOrd
 - (void)addController
 {
     
-    self.headerView = [SPAssembleOrderHeaderView initXibWithFrame:CGRectMake(12, 64, self.view.frame.size.width-24, 121)];
+    self.headerView = [[SPAssembleOrderHeaderView alloc] initWithFrame:CGRectMake(12, 64, self.view.frame.size.width-24, 121)];
+    self.headerView.backgroundColor = [UIColor whiteColor];
+    self.headerView.layer.cornerRadius = 2.0f;
+    [self.view addSubview:self.headerView];
+    
     [self.view addSubview:self.tableView];
-                       
-                       
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.mas_equalTo(0);
-        make.top.mas_equalTo(self.view.mas_top).offset(200);
+        make.top.mas_equalTo(280);
     }];
     
 }

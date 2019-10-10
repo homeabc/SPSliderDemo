@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5499EB70AC992F1EABA2C94B /* Pods_SPSliderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286AE659EEA2211D42E00FEA /* Pods_SPSliderDemo.framework */; };
-		D2E1032C234DD36A00CA7FDC /* SPAssembleOrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E1032B234DD36A00CA7FDC /* SPAssembleOrderHeaderView.xib */; };
 		F129B036234C526000C4BDFF /* SPAssembleOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F129B035234C526000C4BDFF /* SPAssembleOrderDetailViewController.m */; };
 		F129B039234C554F00C4BDFF /* SPAssembleOrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F129B038234C554F00C4BDFF /* SPAssembleOrderHeaderView.m */; };
 		F13D42EB233DF55B003E19DF /* SPAssembleSonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13D42EA233DF55B003E19DF /* SPAssembleSonViewController.m */; };
@@ -47,7 +46,6 @@
 		286AE659EEA2211D42E00FEA /* Pods_SPSliderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPSliderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B466501691E77941D8367EE /* Pods-SPSliderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPSliderDemo.debug.xcconfig"; path = "Target Support Files/Pods-SPSliderDemo/Pods-SPSliderDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BAF6FA148F8E89BDADBE04B0 /* Pods-SPSliderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPSliderDemo.release.xcconfig"; path = "Target Support Files/Pods-SPSliderDemo/Pods-SPSliderDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D2E1032B234DD36A00CA7FDC /* SPAssembleOrderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPAssembleOrderHeaderView.xib; sourceTree = "<group>"; };
 		F129B034234C526000C4BDFF /* SPAssembleOrderDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleOrderDetailViewController.h; sourceTree = "<group>"; };
 		F129B035234C526000C4BDFF /* SPAssembleOrderDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAssembleOrderDetailViewController.m; sourceTree = "<group>"; };
 		F129B037234C554F00C4BDFF /* SPAssembleOrderHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAssembleOrderHeaderView.h; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 			children = (
 				F129B037234C554F00C4BDFF /* SPAssembleOrderHeaderView.h */,
 				F129B038234C554F00C4BDFF /* SPAssembleOrderHeaderView.m */,
-				D2E1032B234DD36A00CA7FDC /* SPAssembleOrderHeaderView.xib */,
 				F1B5B99F234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.h */,
 				F1B5B9A0234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.m */,
 				F1B5B9A1234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.xib */,
@@ -384,7 +381,6 @@
 				F154139A233CAA5800DF119C /* LaunchScreen.storyboard in Resources */,
 				F1B5B9A3234C5F2000FCBF3A /* SPAssembleOrderDetailTableViewCell.xib in Resources */,
 				F1541397233CAA5800DF119C /* Assets.xcassets in Resources */,
-				D2E1032C234DD36A00CA7FDC /* SPAssembleOrderHeaderView.xib in Resources */,
 				F1A721B9234092D100EE2465 /* SPAssembleOrderSonTableViewCell.xib in Resources */,
 				F1541395233CAA5600DF119C /* Main.storyboard in Resources */,
 			);
