@@ -6,5 +6,6 @@ use_frameworks!
 target "SPSliderDemo" do
     pod 'AFNetworking', '~> 3.2.0'
 	pod 'Masonry'
+	pod 'SDWebImage'
 end
 
